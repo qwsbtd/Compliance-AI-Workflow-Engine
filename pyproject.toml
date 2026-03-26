@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "compliance-ai-workflow-engine"
+version = "0.2.0"
+description = "Python framework for deploying AI in regulated environments with human-in-the-loop checkpoints, cryptographic audit trails, and regulatory compliance validation."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "qwsbtd" },
+]
+keywords = [
+    "compliance",
+    "ai",
+    "workflow",
+    "audit-trail",
+    "regulatory",
+    "healthcare",
+    "nuclear",
+    "fairness",
+    "human-in-the-loop",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Healthcare Industry",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Security :: Cryptography",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/qwsbtd/compliance-ai-workflow-engine"
+Repository = "https://github.com/qwsbtd/compliance-ai-workflow-engine"
+
+[tool.setuptools.packages.find]
+include = ["compliance_engine*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
